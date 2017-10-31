@@ -1,0 +1,14 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://172.18.115.21:27017/User
+  kafka:
+    producer:
+      bootstrap-servers:
+        - 127.0.0.1:9092
+    consumer:
+      bootstrap-servers:
+        - 127.0.0.1:9092
+      auto-offset-reset: earliest
+      client-id: 3451
+      group-id: 1
