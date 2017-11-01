@@ -9,12 +9,11 @@ import java.text.DateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-@Component
 public class MongoExportTasks {
     public static final Logger  LOGGER = LoggerFactory.getLogger(MongoExportTasks.class);
 
 
-    @Scheduled(fixedDelay = 5000)
+    @Scheduled()
     public  void run(){
         LOGGER.info(DateFormat.getDateTimeInstance().format(new Date()));
     }
